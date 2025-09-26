@@ -69,7 +69,7 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
     navItems.push({
       icon: Github,
       label: 'CCBY.CC',
-      href: 'https://github.com/senshinya/MoonTV',
+      href: 'https://ccby.cc',
     });
   }
 
