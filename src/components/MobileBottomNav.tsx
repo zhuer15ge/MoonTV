@@ -65,10 +65,10 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   ];
 
   const { siteName } = useSite();
-  if (siteName !== 'MoonTV') {
+  if (siteName !== 'CCBY.CC') {
     navItems.push({
       icon: Github,
-      label: 'MoonTV',
+      label: 'CCBY.CC',
       href: 'https://github.com/senshinya/MoonTV',
     });
   }
