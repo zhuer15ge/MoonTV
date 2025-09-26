@@ -149,7 +149,7 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
     {
       icon: Star,
       label: '成人VIP区',
-      href: 'https://ccby.cc',
+      href: 'https://ccfr.cc/',
     },
     {
       icon: Clover,
