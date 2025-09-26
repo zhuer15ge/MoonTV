@@ -191,25 +191,25 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
         >
           <div className='flex h-full flex-col'>
             {/* 顶部 Logo 区域 */}
-            <div className='relative h-16'>
-              <div
-                className={`absolute inset-0 flex items-center justify-center transition-opacity duration-200 ${
-                  isCollapsed ? 'opacity-0' : 'opacity-100'
-                }`}
-              >
-                <div className='w-[calc(100%-4rem)] flex justify-center'>
-                  {!isCollapsed && <Logo />}
-                </div>
-              </div>
-              <button
-                onClick={handleToggle}
-                className={`absolute top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100/50 transition-colors duration-200 z-10 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:bg-gray-700/50 ${
-                  isCollapsed ? 'left-1/2 -translate-x-1/2' : 'right-2'
-                }`}
-              >
-                <Menu className='h-4 w-4' />
-              </button>
-            </div>
+              <div className='w-[calc(100%-4rem)] flex justify-center'>
+      {!isCollapsed && (
+        <img 
+          src="https://ccby.cc/3.png" 
+          alt="Logo" 
+          style={{ height: '32px' }} // 可以自己调整大小
+        />
+      )}
+    </div>
+  </div>
+  <button
+    onClick={handleToggle}
+    className={`absolute top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100/50 transition-colors duration-200 z-10 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:bg-gray-700/50 ${
+      isCollapsed ? 'left-1/2 -translate-x-1/2' : 'right-2'
+    }`}
+  >
+    <Menu className='h-4 w-4' />
+  </button>
+</div>
 
             {/* 首页和搜索导航 */}
             <nav className='px-2 mt-4 space-y-1'>
