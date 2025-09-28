@@ -65,11 +65,11 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   ];
 
   const { siteName } = useSite();
-  if (siteName !== 'CCBY.CC') {
+  if (siteName !== 'CCBE.CC') {
     navItems.push({
       icon: Github,
       label: 'CCBY.CC',
-      href: 'https://ccby.cc',
+      href: 'https://ccbe.cc',
     });
   }
 
