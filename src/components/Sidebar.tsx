@@ -170,8 +170,8 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
   if (siteName !== 'CCBY.CC') {
     menuItems.push({
       icon: Github,
-      label: 'CCBY.CC',
-      href: 'https://ccby.cc',
+      label: 'CCBE.CC',
+      href: 'https://ccbe.cc',
     });
   }
 
