@@ -65,10 +65,10 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   ];
 
   const { siteName } = useSite();
-  if (siteName !== 'CCBE.CC') {
+  if (siteName !== '刷新本站') {
     navItems.push({
       icon: Github,
-      label: 'CCBY.CC',
+      label: '刷新本站',
       href: 'https://ccbe.cc',
     });
   }
