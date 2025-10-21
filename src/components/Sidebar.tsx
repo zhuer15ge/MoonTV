@@ -167,10 +167,10 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
   ];
 
   const { siteName } = useSite();
-  if (siteName !== 'CCBY.CC') {
+  if (siteName !== '刷新本站') {
     menuItems.push({
       icon: Github,
-      label: 'CCBE.CC',
+      label: '刷新本站',
       href: 'https://ccbe.cc',
     });
   }
